@@ -45,7 +45,7 @@
         </div>
     </header>
 
-    <div class="w-full min-h-[calc(100vh-75px)] flex justify-center items-center absolute top-0 left-0">
+    <div class="w-full min-h-[calc(100vh-75px)] flex justify-center items-center @if($status !== GameStatus::ACTIVE) absolute top-0 left-0 @else hidden @endif">
         <div @class([
                  "z-10",
                  "border-4",
@@ -70,7 +70,7 @@
                     <span class="text-2xl">😭</span> <span>Nunca pensei que falhasses mas a palavra é</span> <span
                         class="font-bold uppercase ml-1">{{$word}}</span>
                 @elseif($status === GameStatus::WON)
-                <span class="text-2xl ">🎄</span> Boa Niner <span class="text-2xl ">🎄</span>
+                <span class="text-2xl ">🎄</span> Boa amor, podes abrir a próxima caixa <span class="text-2xl "> 🎄</span>
                 @endif
             </span>
             <a href="#" class="font-medium underline hover:no-underline cursor-pointer ml-1"
