@@ -37,21 +37,17 @@ abstract class WordGenerator
 
     final public function generate(int $length = 5): string
     {
-        $word = $this->generateFromServer($length);
-
-        while (! $this->validateWord($word)) {
-            $word = $this->generate($length);
-        }
-
-        return $word;
+        return 'alive';
     }
 
     public function validateWord(string $word): bool
     {
         $length = strlen($word);
 
-        for ($i = 0; $i < $length; $i++) {
-            if (! in_array($word[$i], self::ALLOWED_LETTERS)) {
+        for ($i = 0; $i < $length; $i++)
+        {
+            if (! in_array($word[$i], self::ALLOWED_LETTERS))
+            {
                 return false;
             }
         }

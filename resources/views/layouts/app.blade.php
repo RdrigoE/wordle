@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="font-sans antialiased min-h-screen dark:bg-gray-900">
+<body class="font-sans antialiased min-h-screen dark:bg-gray-900 bg-green-900">
 <main>
     {{ $slot }}
 </main>

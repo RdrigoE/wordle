@@ -25,7 +25,7 @@
         </div>
 
         <div class="text-4xl font-bold">
-            <h1 class="dark:text-white">WORDLE</h1>
+            <h1 class="text-white">FELIZ NATAL COM O TERMO</h1>
         </div>
 
         <div class="flex space-x-2 dark:text-white">
@@ -67,10 +67,10 @@
            ])>
             <span class="text-xl flex justify-center items-center">
                 @if($status === GameStatus::LOST)
-                    <span class="text-2xl">😭</span> <span>Lost word is</span> <span
+                    <span class="text-2xl">😭</span> <span>Nunca pensei que falhasses mas a palavra é</span> <span
                         class="font-bold uppercase ml-1">{{$word}}</span>
                 @elseif($status === GameStatus::WON)
-                    <span class="text-2xl ">🏆</span> Won
+                <span class="text-2xl ">🎄</span> Boa Niner <span class="text-2xl ">🎄</span>
                 @endif
             </span>
             <a href="#" class="font-medium underline hover:no-underline cursor-pointer ml-1"
